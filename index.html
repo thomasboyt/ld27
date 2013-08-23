@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LD27</title>
+
+    <!-- build:js vendor.js -->
+    <script src="bower_components/javascript-state-machine/state-machine.js"></script>
+    <script src="bower_components/almond/almond.js"></script>
+    <script src="bower_components/coquette/coquette.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js game.js -->
+    <script src="tmp/game.js"></script>
+    <!-- endbuild -->
+
+    <script>
+      require(["ld27/main"]);
+    </script>
+
+    <style>
+      body {
+        background: #aaa;
+      }
+      #container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -250px;
+        margin-top: -250px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="container"></canvas>
+    <ul id="log">
+    </ul>
+  </body>
+</html>
